@@ -1,0 +1,4 @@
+﻿  ConsoleApplication1.cpp
+c:\users\zhaokai\desktop\consoleapplication1\consoleapplication1\consoleapplication1.cpp(141): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+c:\users\zhaokai\desktop\consoleapplication1\consoleapplication1\consoleapplication1.cpp(284): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+  ConsoleApplication1.vcxproj -> C:\Users\zhaokai\Desktop\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
