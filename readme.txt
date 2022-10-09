@@ -40,7 +40,7 @@
 	mkdir build   //创建编译目录
 	mkdir dll   //创建编译目录
 	cd build         //进入编译目录
-	cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DENABLE_ZLIB_COMPRESSION=ON -DCRYPTO_BACKEND=OpenSSL -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=./dll --build . .    	//编译命令。 选项-DCMAKE_GENERATOR_PLATFORM=x64 选择目标平台为64位； -DENABLE_ZLIB_COMPRESSION=ON 依赖库zlib的压缩选项的开关打开；-DCRYPTO_BACKEND=OpenSSL 依赖库	选择OpenSSL； -DBUILD_SHARED_LIBS=ON建立动态链接库；-DCMAKE_INSTALL_PREFIX=./dll  将生成的lib dll exe文件安装在./dll目录下；--build . .在上一级目录生成。
+	cmake -DCMAKE_GENERATOR_PLATFORM=x64 -DENABLE_ZLIB_COMPRESSION=ON -DCRYPTO_BACKEND=OpenSSL -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX=./dll --build ..    	//编译命令。 选项-DCMAKE_GENERATOR_PLATFORM=x64 选择目标平台为64位； -DENABLE_ZLIB_COMPRESSION=ON 依赖库zlib的压缩选项的开关打开；-DCRYPTO_BACKEND=OpenSSL 依赖库	选择OpenSSL； -DBUILD_SHARED_LIBS=ON建立动态链接库；-DCMAKE_INSTALL_PREFIX=./dll  将生成的lib dll exe文件安装在./dll目录下；--build . .在上一级目录生成。
 	此时在上一级目录，即D:\data\my_work\GeneralPurposeUnitTestUtility\v1.0\ssh\libssh2-1.10.0\libssh2-1.10.0 下生成了sln的解决方案；用vs打开它，升级，里面有很多项目，依然采用debug x64配	置，会在D:\data\my_work\GeneralPurposeUnitTestUtility\v1.0\ssh\libssh2-1.10.0\libssh2-1.10.0\src\Debug目录下生成你不是说libssh2项目的lib dll文件。头文件在根目录下。
 
 4使用
